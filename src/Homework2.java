@@ -1,5 +1,3 @@
-import shop.Runner;
-
 import java.util.Arrays;
 import java.util.Random;
 
@@ -9,6 +7,7 @@ public class Homework2 {
         ex2();
         ex3();
         ex4();
+        ex5();
     }
 
     public static void ex1() {
@@ -46,6 +45,7 @@ public class Homework2 {
         }
         System.out.println(leftUpToRightDownSum);
         System.out.println(leftDownToRightUpSum);
+        System.out.println("-----------------------------------------------------------------------------------------");
     }
 
     public static void ex2() {
@@ -58,6 +58,7 @@ public class Homework2 {
             numbers[(numbers.length - 1) - i] = num1;
         }
         System.out.println(Arrays.toString(numbers));
+        System.out.println("-----------------------------------------------------------------------------------------");
     }
 
     public static void ex3() {
@@ -76,6 +77,8 @@ public class Homework2 {
                 break;
             }
         }
+        System.out.println("-----------------------------------------------------------------------------------------");
+        System.out.println();
     }
 
     public static void ex4() {
@@ -95,7 +98,12 @@ public class Homework2 {
         //Создать магазин с работниками выше.
         //Вызвать у магазина печать.
         //Вызвать у каждого работника магазина хвастовство его вещами (достать работника из магазина).
-        Runner runner = new Runner();
+        System.out.println("*****************************************************************************************");
+        System.out.println("********************************* М А Г А З И Н *****************************************");
+        System.out.println("*****************************************************************************************");
+        new shop.Runner();
+        System.out.println("-----------------------------------------------------------------------------------------");
+        System.out.println();
     }
 
     public static void ex5() {
@@ -116,5 +124,10 @@ public class Homework2 {
         //Секретаря.
         //Создать офис
         //Запустить рабочий день в офисе
+        System.out.println("*****************************************************************************************");
+        System.out.println("********************************* О Ф И С ***********************************************");
+        System.out.println("*****************************************************************************************");
+        new office.Runner();
+        System.out.println("-----------------------------------------------------------------------------------------");
     }
 }

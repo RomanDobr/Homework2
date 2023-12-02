@@ -6,7 +6,7 @@ package shop;
 public class Shop {
     public Worker[] workers;
 
-    public void printWorkers(Worker[] workers){
+    public void printWorkers(Worker[] workers) {
         for (Worker worker : workers) {
             System.out.print("{" + worker.name + "}:" + "{" + worker.age + "} лет," + "{" + worker.sex + "}, ");
             System.out.print("список вещей: {");

@@ -15,10 +15,10 @@ public class Runner {
         Item screwdriver = new Item("отвертка", 50);
         Item notebook = new Item("тетрадь", 30);
         Item pen = new Item("ручка", 10);
-        Worker vasiliy = new Worker("Василий", 30, "мужчина", new Item[] {hammer,screwdriver});
-        Worker mariana = new Worker("Марьяна", 25, "женщина", new Item[] {notebook,pen});
+        Worker vasiliy = new Worker("Василий", 30, "мужчина", new Item[] {hammer, screwdriver});
+        Worker mariana = new Worker("Марьяна", 25, "женщина", new Item[] {notebook, pen});
         Shop shop = new Shop();
-        shop.workers = new Worker[] {vasiliy,mariana};
+        shop.workers = new Worker[] {vasiliy, mariana};
         shop.printWorkers(shop.workers);
         for (Worker worker : shop.workers) {
             worker.getItemAndScream(worker.items);
